@@ -93,7 +93,7 @@ const MainSIgnUp = () => {
     <>
      {userContext.username?.length > 0 
      ? <LoggedInfo>
-         <h2 className=' m-0 p-0 ' > You're logged in as <span className=' text-pink-500' >{userContext.username}</span></h2>
+         <h2 className="m-0 p-0" > You're logged in as <span className=' text-pink-500' >{userContext.username}</span></h2>
          <Link href={'/quiz'} > 
             <a className=' text-purple-900 underline ' >Take Quiz Here.</a>
          </Link>

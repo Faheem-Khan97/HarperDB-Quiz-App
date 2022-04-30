@@ -34,7 +34,7 @@ const QuizSection = () => {
           const result = await response.json()
           console.log(response);
           if(!response.ok){
-            throw new Error("Soem error occured")
+            throw new Error("Error Occurred, check network maybe :(")
           }
           console.log(result)
           setQuestions(result)
@@ -54,7 +54,7 @@ const QuizSection = () => {
           const result = await response.json()
           console.log(response);
           if(!response.ok){
-            throw new Error("Soem error occured")
+            throw new Error("Error Occurred, check network maybe :( ")
           }
           console.log(result)
           setTotalPages(result[0]['COUNT(id)'] / 5)

@@ -69,15 +69,13 @@ const MainLogin = () => {
         return errors.length === 0 
     }
 
-
-    console.log(errors);
     return (
         <>
         {username?.length > 0 
         ? <LoggedInfo>
-            <h2 className=' md:text-lg m-0 p-0 ' >You're logged in as <span className=' text-pink-500 md:text-lg ' >{username}</span></h2>
+            <h2 className="md:text-lg m-0 p-0 " >You're logged in as <span className=' text-pink-500 md:text-lg ' >{username}</span></h2>
             <Link href={'/quiz'} > 
-                <a className=' text-purple-900 underline ' >Take Quiz Here.</a>
+                <a className="text-purple-900 underline" >Take Quiz Here.</a>
             </Link>
             </LoggedInfo> 
             :<div className='flex flex-col items-center font-mono m-auto '>
