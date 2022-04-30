@@ -1,4 +1,4 @@
-import { DB_URL } from '../constant/constants';
+import {DB_URL} from '../constant/constants'
 
 
 export async function getJWTToken(username, password){
